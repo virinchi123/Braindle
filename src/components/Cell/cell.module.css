@@ -1,0 +1,30 @@
+.container{
+    border: 0.2em solid black;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-evenly;
+    width: 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dot{
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    width: 40%;
+    color: white;
+}
+
+p{
+    margin:0;
+}
+
+.activated{
+    background-color: black;
+    color:black;
+}
