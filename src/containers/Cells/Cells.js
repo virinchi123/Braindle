@@ -3,17 +3,24 @@ import convert from '../../functions/converter';
 import Cell from '../../components/Cell/cell';
 import axios from 'axios';
 import ErrorHandler from '../../components/HOC/ErrorHandler/ErrorHandler';
+import classes from './Cells.module.css';
 
 class Cells extends Component{
 
     state={
-        text:"Hello, there"
+        text:"Hello there"
     }
 
     componentDidMount=()=>{
         axios.get("https://braindle.firebaseio.com/text.json").then(response => {
+            console.log(Object.keys(response.data))
+            console.log(response)
+            const number=Object.keys(response.data).length - 1;
+            console.log(number)
+            console.log(response.data[Object.keys(response.data)[number]])
+
             this.setState({
-                text:response.data
+                text: response.data[Object.keys(response.data)[number]].text
             })
         }).catch(error => {
             console.log(error)
@@ -24,7 +31,7 @@ class Cells extends Component{
         let cells=null;
         
         cells=Array.from(this.state.text.toLowerCase()).map((letter,index)=>{
-            console.log(letter)
+            //console.log(letter)
             if(isNaN(letter) || letter===" ")
             {
                 return <Cell 
@@ -46,9 +53,9 @@ class Cells extends Component{
             }
         })
         return(
-            <Fragment>
+            <div className={classes.container}>
                 {cells}
-            </Fragment>
+            </div>
         )
     }
 }

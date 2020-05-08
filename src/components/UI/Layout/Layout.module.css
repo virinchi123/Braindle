@@ -1,0 +1,57 @@
+.container{
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    padding-top: 0em;
+    box-sizing: border-box;
+}   
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.Toolbar{
+    background-color: rgb(150, 150, 150);
+    padding-left:2em;
+    margin-left: -2em;
+    margin-right: -2em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+
+.Toolbar img{
+    width: 2.6em;
+    height: 2.6em;
+    border-radius: 100%;
+}
+
+.Toolbar div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Toolbar div input{
+    border-radius: 1em;
+    border: none;
+    height: 2em;
+    padding: 0 1em;
+}
+
+.Toolbar div button{
+    background-color: rgb(100,100,100);
+    color: white;
+    border:none;
+    border-radius: 1em;
+}
+
+.component{
+    padding-top: 2em;
+}
+

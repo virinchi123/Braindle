@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import Cells from './containers/Cells/Cells'
+import Cells from './containers/Cells/Cells';
+import Layout from './components/UI/Layout/Layout';
+
 
 function App() {
   return (
     <div className="App">
-      <Cells/>
+      <Layout>
+        <Cells /> 
+      </Layout>
     </div>
   );
 }
