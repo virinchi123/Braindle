@@ -11,7 +11,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "homepage": "https://virinchi123.github.io/GoReadMistborn"  
+    "homepage": "http://virinchi123.github.io/GoReadMistborn"  
   },
   "scripts": {
     "start": "react-scripts start",
