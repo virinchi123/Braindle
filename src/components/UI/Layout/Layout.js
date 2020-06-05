@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import classes from './Layout.module.css';
-import Toph from '../../../Assets/images/toph.jpg';
+import Toph from '../../../assets/images/toph.jpg';
 
 
 const Layout = (props) =>{

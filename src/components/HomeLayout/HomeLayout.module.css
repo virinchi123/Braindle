@@ -1,0 +1,143 @@
+.body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body .first {
+  background-image: url("../../Braindle/static/images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5%;
+}
+
+.body .first .topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .first .topBar h1 span {
+  color: red;
+}
+
+.body .first .topBar .VIT {
+  margin: 2.5%;
+}
+
+.body .first .whiteBar {
+  padding: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body .first .whiteBar p {
+  color: black;
+}
+
+.body .first .whiteBar .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.body .first .centerpiece {
+  padding: 20% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body .first .centerpiece p {
+  text-align: center;
+}
+
+.body .first .centerpiece h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.body .first p {
+  color: white;
+}
+
+.body .first h1 {
+  color: white;
+  font-weight: 500;
+}
+
+.body .bots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .bots h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.body .bots p {
+  text-align: center;
+  margin-top: 40%;
+  color: #dfdfdf;
+}
+
+.body .bots textarea {
+  width: 16em;
+}
+
+.body .bots button {
+  background-color: #db3647;
+  border: none;
+  border-radius: 30px;
+  padding: 1em;
+  color: white;
+  margin: 6em 0;
+}
+/*# sourceMappingURL=HomeLayout.module.css.map */

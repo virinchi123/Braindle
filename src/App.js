@@ -3,6 +3,7 @@ import './App.css';
 import Axios from 'axios'
 import Cells from './containers/Cells/Cells';
 import Layout from './components/UI/Layout/Layout';
+import HomeLayout from './components/HomeLayout/HomeLayout';
 
 
 class App extends Component {
@@ -51,13 +52,19 @@ class App extends Component {
   }
 
   render(){
-  return (
+  /*return (
     <div className="App">
       <Layout text={this.state.text} click={this.clickHandler} change={this.changeHandler}>
         <Cells text={this.state.text}/> 
       </Layout>
     </div>
-  );
+  );*/
+
+  return(
+    <div className="App">
+      <HomeLayout></HomeLayout>
+    </div>
+  )
 }
 }
 
