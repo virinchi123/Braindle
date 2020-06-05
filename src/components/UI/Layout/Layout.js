@@ -1,35 +1,14 @@
-import React,{useState} from 'react';
+import React,{useEffect} from 'react';
 import classes from './Layout.module.css';
 import Toph from '../../../Assets/images/toph.jpg';
-import Axios from 'axios';
+
 
 const Layout = (props) =>{
 
-    const [brailleState,updateState]=useState({
-        text:""
-    })
-
-    const changeHandler=(event)=>{
-        updateState({
-            text:event.target.value
-        })
-    }
-
-    const clickHandler=(event)=>{
-        console.log(event.target.value)
-        const obj = {...brailleState}
-        console.log(obj)
-        Axios.delete("https://braindle.firebaseio.com/text.json").then(res=>{
-            Axios.post("https://braindle.firebaseio.com/text.json", obj).then(res => {
-                console.log(res);
-                return res;
-            })
-        })
-        .catch(error=>{
-            console.log(error);
-            return error;
-        })
-    }
+    const string = props.text
+    useEffect(()=>{
+        console.log("[LAYOUT]useEffect is running")
+    },[string])
 
     return(
         <div className={classes.container}>
@@ -39,8 +18,8 @@ const Layout = (props) =>{
                     <img src={Toph} alt="You can't see this" />
                 </div>
                 <div className={classes.inputDiv}>
-                    <input type="text" placeholder="update and refresh" onChange={changeHandler}></input>
-                    <button type="submit" onClick={clickHandler}>Translate</button>
+                    <input type="text" placeholder="update and refresh" onChange={props.change}></input>
+                    <button type="submit" onClick={props.click}>Save</button>
                 </div>
             </div>
             <div className={classes.component}>

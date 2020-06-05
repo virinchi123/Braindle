@@ -18,6 +18,7 @@ class Cells extends Component{
             const number=Object.keys(response.data).length - 1;
             console.log(number)
             console.log(response.data[Object.keys(response.data)[number]])
+            console.log("[CELLS]Component is mounted")
 
             this.setState({
                 text: response.data[Object.keys(response.data)[number]].text
@@ -27,10 +28,13 @@ class Cells extends Component{
         })
     }
 
+    componentDidUpdate=()=>{
+        console.log("[CELLS]Updated!")
+    }
     render(){
         let cells=null;
         
-        cells=Array.from(this.state.text.toLowerCase()).map((letter,index)=>{
+        cells=Array.from(this.props.text.toLowerCase()).map((letter,index)=>{
             //console.log(letter)
             if(isNaN(letter) || letter===" ")
             {
