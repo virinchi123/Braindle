@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CASzB;;AAXD,AAII,QAJI,CAIJ,EAAE,CAAA;EACE,KAAK,EAAE,KAAK;CACf;;AANL,AAQI,QARI,CAQJ,CAAC,CAAA;EACG,KAAK,EAAE,OAAgB;CAC1B",
+    "sources": [
+        "Token.module.scss"
+    ],
+    "names": [],
+    "file": "Token.module.css"
+}

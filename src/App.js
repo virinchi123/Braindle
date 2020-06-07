@@ -3,6 +3,7 @@ import './App.css';
 import Axios from 'axios'
 import Cells from './containers/Cells/Cells';
 import Layout from './components/UI/Layout/Layout';
+import WorkArea from './components/WorkArea/WorkArea'
 import HomeLayout from './components/HomeLayout/HomeLayout';
 
 
@@ -62,7 +63,9 @@ class App extends Component {
 
   return(
     <div className="App">
-      <HomeLayout></HomeLayout>
+      <HomeLayout mode="epub">
+        <WorkArea text={this.state.text} click={this.clickHandler} change={this.changeHandler}></WorkArea>
+      </HomeLayout>
     </div>
   )
 }

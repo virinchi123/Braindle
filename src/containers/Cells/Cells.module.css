@@ -4,5 +4,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90vw;
 }
 /*# sourceMappingURL=Cells.module.css.map */

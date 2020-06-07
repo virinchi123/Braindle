@@ -3,6 +3,58 @@
           box-sizing: border-box;
 }
 
+.body .mantlePiece {
+  padding-top: 6em;
+}
+
+.body .mantlePiece .fist {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "left right";
+  gap: 3em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.body .mantlePiece .fist .leftboi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .mantlePiece .fist .leftboi h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+.body .mantlePiece .fist .leftboi p {
+  color: white;
+  font-weight: 400;
+}
+
+.body .mantlePiece .fist .rightboi {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  width: 50%;
+}
+
+.body .mantlePiece .fist .rightboi img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .body .first {
   background-image: url("../../Braindle/static/images/background1.jpg");
   background-size: cover;
@@ -42,30 +94,13 @@
   margin: 2.5%;
 }
 
-.body .first .whiteBar {
-  padding: 1.5em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.body .first .topBar p {
+  color: white;
 }
 
-.body .first .whiteBar p {
-  color: black;
-}
-
-.body .first .whiteBar .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.body .first .topBar h1 {
+  color: white;
+  font-weight: 500;
 }
 
 .body .first .centerpiece {
@@ -84,20 +119,13 @@
 
 .body .first .centerpiece p {
   text-align: center;
+  color: white;
 }
 
 .body .first .centerpiece h1 {
   text-align: center;
   font-weight: 500;
-}
-
-.body .first p {
   color: white;
-}
-
-.body .first h1 {
-  color: white;
-  font-weight: 500;
 }
 
 .body .bots {
