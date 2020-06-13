@@ -1,4 +1,12 @@
+import re
 const convert = (props)=>{
+   // const letter= props[0];
+    //for line in props:
+    //for word in line.split():
+    switch(props){
+        case '/^the$/':
+            return [];
+    }
     const letter= props[0];
     switch(letter){
 
