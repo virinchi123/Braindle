@@ -46,6 +46,16 @@ const cell = (props) =>{
             activated: props.activations[5],
             dot:true
         }
+    let dot7 = cx(
+        {
+            activated: props.activations[6],
+            dot:true
+        }
+   let dot8 = cx(
+        {
+            activated: props.activations[7],
+            dot:true
+        }
     )
     return(
         <div className={classes.container}>
@@ -70,6 +80,14 @@ const cell = (props) =>{
                     <p>.</p>
                 </div>
                 <div className={dot6} id="dot6">
+                    <p>.</p>
+                </div>
+            </div>
+             <div className={classes.row} id="4">
+                <div className={dot7} id="dot7">
+                    <p>.</p>
+                </div>
+                <div className={dot8} id="dot8">
                     <p>.</p>
                 </div>
             </div>
