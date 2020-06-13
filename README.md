@@ -1,3 +1,6 @@
+storing values for 8 dot and 6 dot: src/functions
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
